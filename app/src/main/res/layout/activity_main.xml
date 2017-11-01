@@ -19,32 +19,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="150dp"
         android:id="@+id/linearLayout1">
 
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="@string/name"
+            android:layout_height="wrap_content"
+            android:text="@string/name1"
+            android:textStyle="bold"
+            android:fontFamily="serif"
             android:layout_alignBottom="@+id/input"
             android:layout_toLeftOf="@+id/input"
-            android:layout_toStartOf="@+id/input" />
+            android:layout_toStartOf="@+id/input"
+            android:layout_marginLeft="17dp"/>
 
         <EditText
             android:id="@+id/input"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="17dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_marginRight="17dp"
             android:layout_weight="1"
+
             android:ems="10"
+            android:text="@string/edit_text"
+            android:textColor="#9a9494"
+            android:textStyle="bold"
+            android:fontFamily="serif"
             android:gravity="center"
             android:inputType="textMultiLine"
             android:layout_alignBottom="@+id/button"
             android:layout_toLeftOf="@+id/button"
-            android:layout_toStartOf="@+id/button" />
+            android:layout_toStartOf="@+id/button"
+            android:background="@drawable/roundcolorborders"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/name_buttom"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="200dp"/>
 
 
 </FrameLayout>

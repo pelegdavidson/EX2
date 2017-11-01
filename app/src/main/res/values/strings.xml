@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">EX2</string>
     <string name="intro">This exercise demonstrates the: Activity life-cyrcle callback methods, views referencing, and on-click handler</string>
+    <string name="name1">name:</string>
+    <string name="name_buttom">try me!</string>
+    <string name="edit_text">enter here your first name</string>
 </resources>
