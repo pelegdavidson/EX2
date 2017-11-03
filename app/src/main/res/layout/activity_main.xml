@@ -43,7 +43,7 @@
             android:layout_weight="1"
 
             android:ems="10"
-            android:text="@string/edit_text"
+            android:hint="@string/edit_text"
             android:textColor="#9a9494"
             android:textStyle="bold"
             android:fontFamily="serif"
