@@ -4,4 +4,21 @@
     <string name="name1">name:</string>
     <string name="name_buttom">try me!</string>
     <string name="edit_text">enter here your first name</string>
+    <string name="create">On Create Event</string>
+    <string name="start">On start Event</string>
+    <string name="pause">On pause Event</string>
+    <string name="resume">On resume Event</string>
+    <string name="destroy">On destroy Event</string>
+    <string name="stop">On stop Event</string>
+    <string name="introMessage">hello this is your java coding experience</string>
+    <string name="notClicked">you must enter your name before clicking</string>
+    <string name="clickCnt1">, you clicked  </string>
+    <string name="clickCnt2">  times</string>
+
+
+
+
+
+
+
 </resources>
