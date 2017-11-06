@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-    private static int cnt;
-    private Boolean showToast=false;
+    private int cnt;
+
     final String MY_TAG = "EX2.MainActivity";
 
     @Override
@@ -21,11 +21,6 @@ public class MainActivity extends Activity {
         Log.i(MY_TAG, getString(R.string.create));
         if(savedInstanceState==null){
             Toast.makeText(this, getString(R.string.introMessage), Toast.LENGTH_LONG).show();
-        }
-        else{
-            if(showToast){
-                Toast.makeText(this, getString(R.string.introMessage), Toast.LENGTH_LONG).show();
-            }
         }
 
     }
@@ -74,20 +69,22 @@ public class MainActivity extends Activity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
 
-        savedInstanceState.putInt("MyInt", cnt);
-        savedInstanceState.putBoolean("Toast_shown", true);
+        savedInstanceState.putInt("Counter", cnt);
 
         super.onSaveInstanceState(savedInstanceState);
+        Log.i(MY_TAG, "on save instance state event");
     }
 
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
 
         super.onRestoreInstanceState(savedInstanceState);
+        if(savedInstanceState!=null) {
+            cnt = (int) savedInstanceState.getInt("Counter");
 
-        int myInt = savedInstanceState.getInt("MyInt");
-        boolean myBoolean = savedInstanceState.getBoolean("Toast_shown");
-        this.showToast=!myBoolean;
+        }
+
+        Log.i(MY_TAG, "on restore instance state event");
     }
 
 }
